@@ -22,6 +22,9 @@ AUDIO_AGM += libagm_compress_plugin
 AUDIO_AGM += agmcompresscap
 AUDIO_AGM += agmvoiceui
 AUDIO_AGM += agmhostless
+AUDIO_AGM += libcodec_interface
+AUDIO_AGM += libcodec_pcm_plugin
+
 
 #PAL Module
 AUDIO_PAL := libar-pal
@@ -110,6 +113,8 @@ AUDIO_MODULES := ftm_test_config
 AUDIO_MODULES += ftm_test_config_sun-qrd-snd-card
 AUDIO_MODULES += ftm_test_config_sun-qrd-sku2-snd-card
 AUDIO_MODULES += audioadsprpcd
+AUDIO_MODULES += acdb_cal_vienna.acdb
+AUDIO_MODULES += workspaceFileXml_vienna.qwsp
 AUDIO_MODULES += MTP_acdb_cal.acdb
 AUDIO_MODULES += MTP_workspaceFileXml.qwsp
 AUDIO_MODULES += CDP_acdb_cal.acdb
@@ -191,7 +196,7 @@ AUDIO_MODULES += \
 
 # AIDL AHAL VENDOR EXTENSION
 AUDIO_MODULES += \
-    libaudiohalvendorextn
+    libaudiohalvendorextn_wear
 
 # add modules for fuzzing
 ifneq ($(filter audio,$(QC_HWASAN))$(filter hwaddress,$(SANITIZE_TARGET)),)
