@@ -11,6 +11,8 @@ ifneq ($(TARGET_IS_HEADLESS),true)
 #AGM
 AUDIO_AGM := libagmclient
 AUDIO_AGM += libagmipcservice
+AUDIO_AGM += libcodecipcservice
+AUDIO_AGM += libcodec_ipc_client
 AUDIO_AGM += libagm
 AUDIO_AGM += agmplay
 AUDIO_AGM += agmcap
@@ -193,6 +195,10 @@ AUDIO_MODULES += \
     libaudiocorehal.qti \
     libaudiocorehal.default \
     libaudioeffecthal.qti
+
+#audio vibrator
+AUDIO_MODULES += vendor.qti.hardware.vibrator.impl
+AUDIO_MODULES += vendor.qti.hardware.vibrator.service
 
 # AIDL AHAL VENDOR EXTENSION
 AUDIO_MODULES += \
