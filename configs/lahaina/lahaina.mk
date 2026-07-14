@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += $(AUDIO_HAL_TEST_APPS)
 
 PRODUCT_PACKAGES += IDP_acdb_cal.acdb
 PRODUCT_PACKAGES += IDP_workspaceFileXml.qwsp
+PRODUCT_PACKAGES += RB3_acdb_cal.acdb
+PRODUCT_PACKAGES += RB3_workspaceFileXml.qwsp
+PRODUCT_PACKAGES += AIO_acdb_cal.acdb
+PRODUCT_PACKAGES += AIO_workspaceFileXml.qwsp
 PRODUCT_PACKAGES += QRD_acdb_cal.acdb
 PRODUCT_PACKAGES += QRD_workspaceFileXml.qwsp
 PRODUCT_PACKAGES += IDP_lahaina_yupik_acdb_cal.acdb
@@ -151,6 +155,7 @@ PRODUCT_PACKAGES += fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 PRODUCT_PACKAGES += fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 PRODUCT_PACKAGES += fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 PRODUCT_PACKAGES += fai__3.0.0_0.0__eai_1.36_enpu2.pmd
+PRODUCT_PACKAGES += fai__4.8.8_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_1.10.pmd
 PRODUCT_PACKAGES += libfmpal
 PRODUCT_PACKAGES += event.eai
 PRODUCT_PACKAGES += music.eai
@@ -184,8 +189,12 @@ PRODUCT_COPY_FILES += \
     $(CONFIG_HAL_SRC_DIR)/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     $(CONFIG_HAL_SRC_DIR)/mixer_paths_lahaina_yupikqrd.xml:$(CONFIG_SKU_OUT_DIR)/mixer_paths_lahaina_yupikqrd.xml \
     $(CONFIG_HAL_SRC_DIR)/mixer_paths_lahaina_yupikidp.xml:$(CONFIG_SKU_OUT_DIR)/mixer_paths_lahaina_yupikidp.xml \
+    $(CONFIG_HAL_SRC_DIR)/mixer_paths_lahaina_yupikidprb3.xml:$(CONFIG_SKU_OUT_DIR)/mixer_paths_lahaina_yupikidprb3.xml \
+    $(CONFIG_HAL_SRC_DIR)/mixer_paths_lahaina_yupikidpaio.xml:$(CONFIG_SKU_OUT_DIR)/mixer_paths_lahaina_yupikidpaio.xml \
     $(CONFIG_PAL_SRC_DIR)/resourcemanager_lahaina_yupikidp.xml:$(CONFIG_SKU_OUT_DIR)/resourcemanager_lahaina_yupikidp.xml \
     $(CONFIG_PAL_SRC_DIR)/resourcemanager_lahaina_yupikqrd.xml:$(CONFIG_SKU_OUT_DIR)/resourcemanager_lahaina_yupikqrd.xml \
+    $(CONFIG_PAL_SRC_DIR)/resourcemanager_lahaina_yupikidprb3.xml:$(CONFIG_SKU_OUT_DIR)/resourcemanager_lahaina_yupikidprb3.xml \
+    $(CONFIG_PAL_SRC_DIR)/resourcemanager_lahaina_yupikidpaio.xml:$(CONFIG_SKU_OUT_DIR)/resourcemanager_lahaina_yupikidpaio.xml \
     $(CONFIG_PAL_SRC_DIR)/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     $(CONFIG_PAL_SRC_DIR)/plugin_manager.xml:$(CONFIG_SKU_OUT_DIR)/plugin_manager.xml \
     vendor/qcom/opensource/audio-hal/primary-hal/configs/common/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
