@@ -165,6 +165,7 @@ PRODUCT_PACKAGES += fai__4.8.8_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_1.10.pm
 PRODUCT_PACKAGES += fai__4.6.5_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_1.3.0_enpuv2.pmd
 PRODUCT_PACKAGES += fai__4.6.5_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_1.3.0_enpuv2.pmd
 PRODUCT_PACKAGES += fai__4.6.5_2.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_1.3.0_enpuv2.pmd
+PRODUCT_PACKAGES += fai__3.0.0_0.0__eai_1.3.0_enpuv2.pmd
 PRODUCT_PACKAGES += libfmpal
 PRODUCT_PACKAGES += event.eai
 PRODUCT_PACKAGES += music.eai
